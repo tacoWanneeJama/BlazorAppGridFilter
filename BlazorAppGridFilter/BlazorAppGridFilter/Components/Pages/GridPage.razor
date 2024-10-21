@@ -1,13 +1,12 @@
-﻿
-@page "/gridpage2"
-@rendermode InteractiveWebAssembly
+﻿@page "/"
+@page "/gridpage"
+@attribute [StreamRendering]
 
-<PageTitle>GridPage2</PageTitle>
-<h3>GridPage2</h3>
+<PageTitle>GridPage</PageTitle>
+<h3>GridPage</h3>
 
 <DataGrid TItem="Row" Filterable="true" Data="rows">
     <DataGridColumns>
-        <DataGridNumericColumn Field="@nameof(Row.Id)" Displayable="false" />
         <DataGridColumn Field="@nameof(Row.Name)" />
     </DataGridColumns>
 
